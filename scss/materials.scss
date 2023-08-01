@@ -1,0 +1,74 @@
+@import "./site.scss";
+
+.materials {
+  padding-left: 15.6%;
+  padding-right: 15.6%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.three__articles {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.article {
+  //   border: 1px solid;
+  margin-top: 3rem;
+  width: 26.5rem; /* прильно ли задал ширину на весь блок??? */
+  // width: fit-content;
+  &__picture {
+    width: 26.5rem;
+    height: 16.875rem;
+  }
+
+  &__slogan {
+    color: $txt__black;
+    margin-top: 1.53rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.5rem */
+  }
+
+  &__date {
+    color: $txt__black;
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 0.9rem */
+  }
+
+  &__desc {
+    color: $txt__black;
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.05rem */
+    width: 26.5rem;
+  }
+}
+
+.France {
+  color: $txt__blue;
+}
+
+.news {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+
+  &__btn {
+    color: $txt__white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    background-color: #4f8ff0;
+    padding: 1rem 1.5rem;
+  }
+}

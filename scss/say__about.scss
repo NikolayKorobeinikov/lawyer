@@ -1,0 +1,119 @@
+@import "./site.scss";
+
+.say__about {
+  padding-left: 15.6%;
+  padding-right: 15.6%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-image: url(../images/Фон\ блока.png);
+
+  @include breakpoint (xl) {
+    padding-left: 10.6%;
+    padding-right: 10.6%;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.about {
+  align-items: start;
+}
+
+.two {
+  color: $txt__blue;
+}
+
+.comments {
+  display: flex;
+  gap: 1.5rem;
+  @include breakpoint (lg) {
+    flex-direction: column;
+  }
+}
+
+.comment {
+  //   border: 1px solid;
+  margin-top: 3rem;
+  padding: 2rem;
+  width: 40.5rem;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 10px 0px rgba(33, 33, 33, 0.15);
+
+  &_content_one {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .first__company {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  &_first {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &_feather {
+    width: 3.4375rem;
+    height: 3.4375rem;
+  }
+
+  &__text {
+    color: $txt__black;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.3125rem */
+    margin-top: 1rem;
+  }
+}
+
+.name_company {
+  color: $txt__black;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 1.05rem */
+}
+
+.name_human {
+  color: $txt__black;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.875rem */
+  margin-top: 0.25rem;
+}
+
+.review {
+  margin-top: 2rem;
+  gap: 1.5rem;
+  &_all {
+    color: $txt__white;
+    background-color: #4f8ff0;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+  }
+
+  &_text {
+    color: $txt__black;
+    background-color: #e6e6e6;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+  }
+}

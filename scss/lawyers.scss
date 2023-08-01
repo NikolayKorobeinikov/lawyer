@@ -1,0 +1,81 @@
+@import "./site.scss";
+
+.lawyers {
+  padding-left: 15.6%;
+  padding-right: 15.6%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #f7f7f7;
+
+  &__our {
+    display: flex;
+    gap: 1.5rem;
+    @include breakpoint(xxxxl) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.lawyer {
+  padding-bottom: 1.5rem;
+  margin-top: 3rem;
+  // border: 1px solid;
+  width: fit-content;
+  :nth-child(3) {
+    width: 19.5rem;
+  }
+  &__photo {
+    width: 19.5rem;
+    height: 20rem;
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 1.2rem */
+    margin-top: 1.5rem;
+    color: $txt__black;
+    // :nth-child(3) {
+    //   margin-top: 5.19rem 1.25rem 19.5rem 1.25rem;
+    // }
+  }
+
+  &__profession {
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 1.05rem */
+    text-transform: lowercase;
+    color: $txt__black;
+    margin-top: 0.62rem;
+  }
+
+  &__desc {
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 1.05rem */
+    color: $txt__black;
+  }
+
+  &__exp {
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 1.2rem */
+    color: $txt__black;
+  }
+
+  &__hand {
+    width: 1.12756rem;
+    height: 1.3125rem;
+    opacity: 0.4000000059604645;
+    margin: auto;
+  }
+}
