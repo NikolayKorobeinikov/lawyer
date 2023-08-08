@@ -9,6 +9,8 @@
 
   &__our {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
     @include breakpoint(xxxxl) {
       flex-direction: column;
@@ -38,9 +40,6 @@
     line-height: 120%; /* 1.2rem */
     margin-top: 1.5rem;
     color: $txt__black;
-    // :nth-child(3) {
-    //   margin-top: 5.19rem 1.25rem 19.5rem 1.25rem;
-    // }
   }
 
   &__profession {

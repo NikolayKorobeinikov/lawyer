@@ -1,0 +1,207 @@
+@import "./site.scss";
+
+footer {
+  padding-left: 15.6%;
+  padding-right: 15.6%;
+  padding-top: 5rem;
+  background-color: #222222;
+
+  @include breakpoint (xxxxl) {
+    padding-left: 8%;
+  padding-right: 8%;
+  }
+}
+
+.the_end {
+  display: flex;
+  padding-bottom: 5rem;
+
+@include breakpoint (lg) {
+  flex-direction: column;
+}
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-right: 12.81rem;
+    
+    @include breakpoint (xxl) {
+      margin-right: 8rem;
+    }
+    
+  }
+}
+
+.end_page {
+  display: flex;
+  gap: 11.37rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.75rem;
+  @include breakpoint (lg) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+}
+
+.last__txt {
+  color: $txt__white;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 1.2rem */
+  text-transform: lowercase;
+}
+
+.line {
+  height: 0.0625rem;
+  opacity: 0.20000000298023224;
+  border-top: 0.0625rem solid #8c8c8c;
+  margin-bottom: 3rem;
+}
+
+.end_nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  &_txt {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.description {
+  color: #8c8c8c;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 0.9rem */
+  text-transform: uppercase;
+}
+
+.our__contacts {
+  color: $txt__white;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 1.5rem */
+}
+
+.icon__item {
+    // width: 32px;
+    // height: 32px; /* обычно задаем ширину для div с изображением */
+  padding: 0.75rem 0.69rem 0.69rem 0.75rem;
+  background-color: #2c2c2c;
+}
+
+.last__list {
+  @include breakpoint (xl) {
+    display: none;
+  }
+}
+
+.item_li {
+  color: $txt__white;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: /*120%;*/ 1.05rem;
+  text-transform: uppercase;
+  // margin-bottom: 1rem;
+}
+
+.element__li {
+  margin-bottom: 1rem;
+}
+
+.element__li:nth-child(3) {
+  color: $txt__blue;
+}
+
+.question {
+  width: 26.5rem;
+  margin-left: 9.5rem;
+  @include breakpoint (md) {
+    width: 24rem;
+  }
+
+  @include breakpoint (xxl) {
+    margin-left: 0;
+  }
+
+  &__for_lawyer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__picture {
+    width: 4.0625rem;
+    height: 4.0625rem;
+    margin-right: 1.5rem;
+  }
+
+  &__desc {
+    color: $txt__white;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.3125rem */
+    margin-top: 1.44rem;
+  }
+
+  &__btn {
+    color: $txt__white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 120%; /* 1.05rem */
+    text-transform: uppercase;
+    background-color: #4f8ff0;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+.full__name {
+  display: flex;
+  flex-direction: column;
+  &-name {
+    color: $txt__white;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 1.875rem */
+  }
+
+  &-job {
+    color: $txt__white;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 1.05rem */
+  }
+}
+
+.personal__policy {
+  background-color: #181818;
+  // padding-left: 15.6%;
+  // padding-right: 15.6%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint (md) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__text {
+    color: $txt__white;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 1.05rem */
+  }
+}

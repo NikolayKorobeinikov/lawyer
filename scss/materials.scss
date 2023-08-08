@@ -5,21 +5,45 @@
   padding-right: 15.6%;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  @include breakpoint(md) {
+    padding-left: 10.6%;
+    padding-right: 10.6%;
+  }
+}
+
+// .useful_materials {
+// justify-content: center;
+// }
+
+.txt__company {
+  text-align: center;
 }
 
 .three__articles {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  @include breakpoint(xxxl) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .article {
   //   border: 1px solid;
   margin-top: 3rem;
   width: 26.5rem; /* прильно ли задал ширину на весь блок??? */
-  // width: fit-content;
+  @include breakpoint(md) {
+    width: 23.5rem;
+  }
+
   &__picture {
     width: 26.5rem;
     height: 16.875rem;
+    @include breakpoint(md) {
+      width: 23.5rem;
+    }
   }
 
   &__slogan {
@@ -29,6 +53,9 @@
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 1.5rem */
+    @include breakpoint(md) {
+      width: 23.5rem;
+    }
   }
 
   &__date {
@@ -48,6 +75,9 @@
     font-weight: 400;
     line-height: 120%; /* 1.05rem */
     width: 26.5rem;
+    @include breakpoint(md) {
+      width: 23.5rem;
+    }
   }
 }
 
