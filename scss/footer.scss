@@ -1,8 +1,8 @@
 @import "./site.scss";
 
 footer {
-  padding-left: 15.6%;
-  padding-right: 15.6%;
+  // padding-left: 15.6%;
+  // padding-right: 15.6%;
   padding-top: 5rem;
   background-color: #222222;
 
@@ -11,6 +11,8 @@ footer {
     padding-right: 8%;
   }
 }
+
+
 
 .the_end {
   display: flex;
@@ -85,12 +87,19 @@ footer {
   font-weight: 700;
   line-height: 150%; /* 1.5rem */
 }
-
-.icon__item {
-  // width: 32px;
-  // height: 32px; /* обычно задаем ширину для div с изображением */
+.icon_padding {
   padding: 0.75rem 0.69rem 0.69rem 0.75rem;
   background-color: #2c2c2c;
+}
+
+.icon__item {
+  width: 32px;
+  height: 32px; /* обычно задаем ширину для div с изображением */
+  // padding: 0.75rem 0.69rem 0.69rem 0.75rem;
+ 
+  // img {
+  //   object-fit: cover;
+  // }
 }
 
 .last__list {
@@ -185,8 +194,8 @@ footer {
 
 .personal__policy {
   background-color: #181818;
-  // padding-left: 15.6%;
-  // padding-right: 15.6%;
+  padding-left: 15.6%;
+  padding-right: 15.6%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
